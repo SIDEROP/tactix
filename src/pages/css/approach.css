@@ -1,0 +1,56 @@
+#approach{
+    position: relative;
+    width: 100%;
+    background-color: #FDE680;
+    padding: 40px 0px;
+    overflow: hidden;
+}
+
+#approach .approachbox{
+    position: relative;
+    width: clamp(290px,60vw,1300px);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+
+#approach .agency1:nth-child(1){
+    background-color: #39608E;
+}
+
+#approach .agency1:nth-child(2){
+    background-color: #E2EEFC;
+}
+
+#approach .agency1 img{
+    order: 3;
+}
+#approach .agency1 h1{
+    order: 1;
+}
+#approach .agency1 p{
+    order: 2;
+}
+
+
+
+.approackClint{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.approackClint::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    z-index: 1;
+    background: linear-gradient(to bottom, transparent, black);
+}

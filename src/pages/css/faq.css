@@ -1,0 +1,35 @@
+#faq{
+    position: relative;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 70px 0px;
+    overflow: hidden;
+}
+
+.faqBox{
+    position: relative;
+    width: clamp(300px,50vw,1300px);
+    margin: auto;
+}
+
+
+.faqTop{
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    padding: 40px 5px;
+    display: flex;
+    justify-content: center;
+}
+.faqTop h1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(25px,3vw,80px);
+}
+.faqTop h1 span:nth-child(1){
+    color: #999999;
+}
+
+

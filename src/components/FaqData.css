@@ -1,0 +1,57 @@
+.faqData{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    background-color: #141414;
+    padding: 40px 30px;
+    gap: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.206);
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.faqData.active p{
+    display: flex;
+}
+
+.faqData.active i{
+    transform: rotate(40deg);
+}
+
+.faqData .titelLogo{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.faqData .titelLogo h2{
+    font-size: clamp(19px,1.2vw,25px);
+    font-weight: 400;
+    width: calc(100% - 50px);
+}
+
+.faqData p{
+    font-size: 15px;
+    opacity: .5;
+    display: none;
+}
+
+.faqData i{
+    background-color: #2FE784;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-weight: 200;
+    color: #0000006c;
+    border-radius: 50%;
+    transition: all .4s;
+}
+

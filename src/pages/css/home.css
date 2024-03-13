@@ -1,0 +1,153 @@
+#home{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+    background-color:black;
+    color: white;
+    overflow: hidden;
+}
+
+#home .homeContent{
+    margin-top: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.homeContent .homeBtn{
+    position: relative;
+    background-color: #082A18;
+    color: #2EE281;
+    font-size: 18px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: all .7s;
+    font-weight: 500;
+    cursor: pointer;
+    display: block;
+}
+
+.homeContent .homeBtn:hover{
+    background-color: #0e502cd2;
+}
+
+
+.homeContent h1{
+    position: relative;
+    font-size: clamp(40px,3.9vw,90px);
+    width: clamp(300px,59%,1000px);
+    text-align: center;
+}
+
+.homeContent p{
+    position: relative;
+    font-size: clamp(13px,.9vw,20px);
+    width: clamp(300px,45%,1000px);
+    text-align: center;
+}
+
+
+.homebox{
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+}
+
+.homebox span{
+    position: relative;
+    margin: 20px 0 0 0;
+    height: 50px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.homebox img{
+    height: 200px;
+}
+
+.homebox span:nth-child(2){
+    background-color: #2EE281;
+    color: black;
+}
+.homebox span:nth-child(3){
+    border: 1px solid rgba(255, 255, 255, 0.214);
+    transition: background-color .7s;
+}
+.homebox span:nth-child(3):hover{
+    background-color: rgba(255, 255, 255, 0.155);
+}
+
+
+
+.homeNote{
+    position: relative;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: clamp(13px,.9vw,20px);
+    background-color: transparent;
+}
+
+
+
+
+
+@media only screen and (max-width: 922px) {
+
+    .homebox{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .homebox span:nth-child(3){
+        margin-top: 0;
+    }
+
+    .homebox img{
+        height: 300px;
+    }
+
+    .off1{
+        order: 4;
+    }
+    .off2{
+        order: 2;
+    }
+    .off3{
+        order: 3;
+    }
+    .off4{
+        display: none;
+    }
+
+    @media only screen and (max-width: 530px) {
+
+        .homebox span{
+            margin: 10px;
+        }
+
+        #home{
+            gap: 50px;
+        }
+        .homeContent h1{
+            font-size: 30px;
+        }
+
+    }
+}

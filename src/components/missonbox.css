@@ -1,0 +1,43 @@
+/* aboutMissonbox */
+
+.aboutMissonbox {
+    position: relative;
+    background-color: black;
+    color: white;
+    width: clamp(300px,50vw,1300px);
+    margin: auto;
+    border-radius: 20px;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.aboutMissonbox .box1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aboutMissonbox .ico i{
+    cursor: pointer;
+}
+
+/* missTitle */
+.aboutMissonbox .box1 .missTitle{
+    position: relative;
+}
+.aboutMissonbox .box1 .missTitle h1{
+    font-size: clamp(16px,3vw,69px);
+    max-width: 500px;
+}
+
+.aboutMissonbox .box1 p{
+    font-size: clamp(12px,.9vw,17px );
+}
+
+.aboutMissonbox .box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

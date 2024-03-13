@@ -1,0 +1,119 @@
+#root header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 90px;
+    user-select: none;
+    z-index: 99;
+    /* transition: top .2s; */
+}
+
+header nav{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 40px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+header nav .navLinks{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 13px;
+    transition: all .5s;
+}
+header nav .links a{
+    transition: all .6s;
+}
+
+header nav .links a:hover{
+    color: #999999;
+    transform: skew(2deg, 2deg);
+}
+
+header nav .links:hover{
+    color: #999999;
+    transform: skew(5deg, 5deg);
+}
+
+
+header .contactBtn{
+    position: relative;
+    padding: 9px 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.233);
+    font-weight: 700;
+    transition: all .6s;
+}
+
+header .contactBtn:hover{
+    background-color: #1F1F1F;
+}
+
+
+
+#btn{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 816px) {
+    #root header{
+        padding: 20px 30px;
+    }
+
+    #btn{
+        display: flex;
+        background-color: #313030;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        padding: 5px;
+        z-index: 1;
+    }
+
+    
+    header nav{
+        position: fixed;
+        background-color: black;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 260px;
+        flex-direction: column;
+        padding-top: 90px;
+        font-size: 22px;
+        transition: transform .7s;
+        transform: translateX(100%);
+    }
+
+    header nav.active{
+        transform: translateX(0%);
+    }
+
+    header nav .navLinks{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .logo img{
+        position: relative;
+        z-index: 1;
+    }
+
+
+}
